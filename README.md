@@ -13,7 +13,7 @@ const nfs = require('n-files');
 //or 
 const {read} = require('n-files');
 ```
-* example
+#### Example
 
 ```js
 (async function x() {
