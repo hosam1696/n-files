@@ -18,11 +18,14 @@ const {read} = require('n-files');
 ```js
 (async function x() {
         let file = await nfs.read('./LICENSE');
+        let files = await nf.filesInDir();
         // loop on every single line of the file 
         for (let line of file.lines())
             if(line.startsWith('Copyright')) 
                 console.log(line); // Copyright (c) 2017 Hosam Elnabawy
-        console.log(file.count); // 17
+        console.log(file.count);   // 17
+        console.log(files.map(file =>extname(file)||file)); // [ '.gitignore', '.js', 'LICENSE', '.json', '.md', '.js' ]
+
 });
 
 ```

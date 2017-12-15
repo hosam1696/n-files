@@ -2,7 +2,7 @@
   "name": "n-files",
   "version": "1.0.2",
   "description": "node files is node promise based that provide  easy way dealing with files",
-  "main": "index.js",
+  "main": "view.js",
   "scripts": {
     "test": "jest"
   },
